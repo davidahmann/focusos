@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Focus OS
 
-## Getting Started
+**Your AI Chief of Staff for Slack.**
 
-First, run the development server:
+This repository contains the high-fidelity YC demo build for Focus OS. It demonstrates how the system transforms chaotic Slack communication into structured, prioritized "Work Objects," enabling founders to make decisions 10x faster.
+
+## 🌟 Features
+
+- **Daily Briefing**: A "nightclub-to-library" morning console that filters noise and surfaces only what matters.
+- **Work Objects**: structured decision cards extracted from messy Slack threads.
+- **Draft Queue**: AI-drafted responses that learn your tone and policy preferences via inline feedback.
+- **Safety Ledger**: A transparent log of every action the AI takes, building trust through visibility.
+- **Focus Shield**: Automated protection during deep work sessions.
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS (Custom "Linear-grade" design system)
+- **Language**: TypeScript
+- **UI Primitives**: Radix UI (Tooltip), Lucide React (Icons)
+
+## 🚀 Getting Started
+
+### 1. Web Application
+
+The web app provides the "Morning Console" experience.
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the demo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Slack Simulation (Seeding)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create the "Slack Chaos" shown in the demo, we use a Python script to seed a Slack sandbox with realistic, high-stakes threads.
 
-## Learn More
+**Prerequisites:**
+- A Slack Workspace (Sandbox recommended)
+- A Slack App with `chat:write`, `channels:manage`, `users:read` scopes
+- `SLACK_BOT_TOKEN` environment variable set
 
-To learn more about Next.js, take a look at the following resources:
+**Usage:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Install Python dependencies
+pip install slack_sdk typer rich python-dotenv
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Reset the sandbox (archives old channels)
+python focus_seed.py reset
 
-## Deploy on Vercel
+# Seed "Overnight Backlog" (Wave 1)
+python focus_seed.py seed wave1
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Seed "Morning Spike" (Wave 2) - Run this right before recording
+python focus_seed.py seed wave2
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Focus Shield (Auto-Reply Bot)
+
+To run the "Focus Shield" auto-reply bot during the recording:
+
+**Prerequisites:**
+- `SLACK_APP_TOKEN` (Socket Mode)
+- `SLACK_BOT_TOKEN`
+
+**Usage:**
+
+```bash
+# Install slack_bolt
+pip install slack_bolt
+
+# Run the bot
+python focus_bot.py
+```
+
+
+## 🎬 Demo Script
+
+The full script for the YC demo video is available in [DEMO.md](./DEMO.md).

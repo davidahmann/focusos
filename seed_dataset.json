@@ -1,0 +1,435 @@
+{
+    "channels": [
+        "engineering-incidents",
+        "fundraising",
+        "customer-success",
+        "product",
+        "marketing",
+        "random",
+        "general"
+    ],
+    "user_ids": [
+        "U08T5JPMZUN"
+    ],
+    "waves": {
+        "wave1": {
+            "engineering-incidents": [
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@eng1",
+                        "text": "P0: DB latency spiking to 900–1200ms on prod. Retries climbing fast."
+                    },
+                    "replies": [
+                        {
+                            "as": "@cto",
+                            "text": "Any deploy touching query path in last 2 hrs?"
+                        },
+                        {
+                            "as": "@eng1",
+                            "text": "Yes, search index rollout. Could be causing lock contention."
+                        },
+                        {
+                            "as": "@cto",
+                            "text": "Decision needed: rollback rollout or scale read replicas?"
+                        },
+                        {
+                            "as": "@pm",
+                            "text": "If rollback, we miss tomorrow’s feature freeze."
+                        },
+                        {
+                            "as": "@cto",
+                            "text": "Need founder call."
+                        }
+                    ]
+                },
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@cto",
+                        "text": "Sev-1: payments webhook failing ~6% since 9:12pm."
+                    },
+                    "replies": [
+                        {
+                            "as": "@eng1",
+                            "text": "Seeing timeouts from Stripe endpoint."
+                        },
+                        {
+                            "as": "@cto",
+                            "text": "Can someone verify if Stripe rotated certs?"
+                        },
+                        {
+                            "as": "@eng1",
+                            "text": "I’ll pull logs + run a curl check."
+                        },
+                        {
+                            "as": "@cto",
+                            "text": "Please update by 8am."
+                        }
+                    ]
+                },
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@pm",
+                        "text": "Infra cost alert: Redis cluster spend up 22% week-over-week."
+                    },
+                    "replies": [
+                        {
+                            "as": "@cto",
+                            "text": "FYI logged. We’ll review after incident."
+                        }
+                    ]
+                },
+                {
+                    "kind": "noise_flood",
+                    "count": 8,
+                    "lines": [
+                        "anyone awake?",
+                        "ugh",
+                        "we’re close",
+                        "graphs look bad",
+                        "pls keep me posted",
+                        "still digging",
+                        "ok",
+                        "thanks"
+                    ]
+                }
+            ],
+            "fundraising": [
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@investor",
+                        "text": "Can you send updated ARR bridge + NRR by noon tomorrow? Need it for IC."
+                    },
+                    "replies": [
+                        {
+                            "as": "@founder",
+                            "text": "Yep, pulling latest cohorts."
+                        },
+                        {
+                            "as": "@pm",
+                            "text": "Do we include churn explanation in the bridge?"
+                        },
+                        {
+                            "as": "@founder",
+                            "text": "Probably yes, but frame usage dip carefully."
+                        },
+                        {
+                            "as": "@cto",
+                            "text": "Flag: churn in Q3 tied to one enterprise rollback."
+                        },
+                        {
+                            "as": "@pm",
+                            "text": "Need decision on framing."
+                        }
+                    ]
+                },
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@pm",
+                        "text": "Term sheet redlines from Alpha VC are in. Need review on option pool carve-out."
+                    },
+                    "replies": [
+                        {
+                            "as": "@founder",
+                            "text": "I’ll scan before bed."
+                        },
+                        {
+                            "as": "@investor",
+                            "text": "Also watch liquidation pref wording."
+                        }
+                    ]
+                },
+                {
+                    "kind": "noise_flood",
+                    "count": 6,
+                    "lines": [
+                        "quick q — do we want to preemptively share pricing revamp?",
+                        "probably not yet",
+                        "k",
+                        "fyi tomorrow is tight",
+                        "yep",
+                        "ok"
+                    ]
+                }
+            ],
+            "customer-success": [
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@cs",
+                        "text": "Churn risk: Account X escalated. They want roadmap clarity today."
+                    },
+                    "replies": [
+                        {
+                            "as": "@pm",
+                            "text": "They’re blocked on audit export — still not in v1."
+                        },
+                        {
+                            "as": "@cs",
+                            "text": "They say renewal depends on it."
+                        },
+                        {
+                            "as": "@cto",
+                            "text": "Decision needed: offer 30-day extension or exec call?"
+                        },
+                        {
+                            "as": "@pm",
+                            "text": "Founder should pick."
+                        }
+                    ]
+                },
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@cs",
+                        "text": "Account Y asking for security posture doc. Can we send the SOC2 pack?"
+                    },
+                    "replies": [
+                        {
+                            "as": "@pm",
+                            "text": "Yep, I’ll attach."
+                        },
+                        {
+                            "as": "@cs",
+                            "text": "Cool."
+                        }
+                    ]
+                },
+                {
+                    "kind": "noise_flood",
+                    "count": 10,
+                    "lines": [
+                        "fyi they’re annoyed",
+                        "anyone got context",
+                        "pls advise",
+                        "thanks",
+                        "ok",
+                        "k",
+                        "not urgent but…",
+                        "heads up",
+                        "ping",
+                        "👍"
+                    ]
+                }
+            ],
+            "product": [
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@pm",
+                        "text": "We’re getting pressure to ship audit export before next cohort. Do we pull it into sprint?"
+                    },
+                    "replies": [
+                        {
+                            "as": "@cto",
+                            "text": "That pushes onboarding improvements."
+                        },
+                        {
+                            "as": "@founder",
+                            "text": "Need to weigh churn risk vs roadmap."
+                        },
+                        {
+                            "as": "@pm",
+                            "text": "Decision required."
+                        }
+                    ]
+                },
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@eng1",
+                        "text": "New build passed staging. Deploy window tomorrow 11am."
+                    },
+                    "replies": []
+                }
+            ],
+            "marketing": [
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@cs",
+                        "text": "Draft blog ready for review whenever."
+                    },
+                    "replies": [
+                        {
+                            "as": "@pm",
+                            "text": "looks good"
+                        },
+                        {
+                            "as": "@cs",
+                            "text": "thx"
+                        }
+                    ]
+                },
+                {
+                    "kind": "noise_flood",
+                    "count": 25,
+                    "lines": [
+                        "anyone have the logo file?",
+                        "lol",
+                        "great idea",
+                        "+1",
+                        "ship it",
+                        "thoughts?",
+                        "not urgent",
+                        "FYI",
+                        "nice",
+                        "🚀"
+                    ]
+                }
+            ],
+            "random": [
+                {
+                    "kind": "noise_flood",
+                    "count": 60,
+                    "lines": [
+                        "lol",
+                        "anyone seen this?",
+                        "what’s status?",
+                        "quick q",
+                        "fyi",
+                        "not urgent",
+                        "ping",
+                        "😂",
+                        "¯\\_(ツ)_/¯"
+                    ]
+                }
+            ],
+            "general": [
+                {
+                    "kind": "message",
+                    "message": {
+                        "as": "@pm",
+                        "text": "Reminder: all-hands tomorrow 10am."
+                    }
+                },
+                {
+                    "kind": "message",
+                    "message": {
+                        "as": "@cto",
+                        "text": "FYI."
+                    }
+                }
+            ]
+        },
+        "wave2": {
+            "engineering-incidents": [
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@cto",
+                        "text": "Update: latency stabilized but still high. Need decision in 15 mins on rollback."
+                    },
+                    "replies": [
+                        {
+                            "as": "@eng1",
+                            "text": "Lock waits down, but p95 still 780ms."
+                        },
+                        {
+                            "as": "@cto",
+                            "text": "Founder call needed now."
+                        }
+                    ]
+                },
+                {
+                    "kind": "noise_flood",
+                    "count": 5,
+                    "lines": [
+                        "ping",
+                        "any update?",
+                        "need eyes",
+                        "on it",
+                        "thx"
+                    ]
+                }
+            ],
+            "fundraising": [
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@investor",
+                        "text": "Reminder: IC at 1pm. Need narrative for churn line in ARR bridge."
+                    },
+                    "replies": [
+                        {
+                            "as": "@pm",
+                            "text": "Should we call it ‘one-off enterprise contraction’?"
+                        },
+                        {
+                            "as": "@cto",
+                            "text": "Or ‘product transition churn’?"
+                        },
+                        {
+                            "as": "@pm",
+                            "text": "Need your call."
+                        }
+                    ]
+                }
+            ],
+            "customer-success": [
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@cs",
+                        "text": "Account X wants call by EOD. Who owns?"
+                    },
+                    "replies": [
+                        {
+                            "as": "@pm",
+                            "text": "Founder decision pending from last night."
+                        }
+                    ]
+                }
+            ],
+            "product": [
+                {
+                    "kind": "thread",
+                    "parent": {
+                        "as": "@pm",
+                        "text": "User interviews today at 3pm and 4pm. FYI."
+                    },
+                    "replies": []
+                }
+            ],
+            "marketing": [
+                {
+                    "kind": "noise_flood",
+                    "count": 8,
+                    "lines": [
+                        "quick input?",
+                        "any updates?",
+                        "can you look?",
+                        "thx",
+                        "👍"
+                    ]
+                }
+            ],
+            "random": [
+                {
+                    "kind": "noise_flood",
+                    "count": 10,
+                    "lines": [
+                        "morning!",
+                        "ping",
+                        "thoughts?",
+                        "lol",
+                        "can someone check?"
+                    ]
+                }
+            ],
+            "general": [
+                {
+                    "kind": "message",
+                    "message": {
+                        "as": "@pm",
+                        "text": "Morning — roadmap review today 2pm."
+                    }
+                }
+            ]
+        }
+    }
+}
