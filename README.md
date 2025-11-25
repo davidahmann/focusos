@@ -14,10 +14,19 @@ This repository contains the high-fidelity YC demo build for Focus OS. It demons
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
-- **Styling**: Tailwind CSS (Custom "Linear-grade" design system)
+- **Framework**: Next.js 16 (App Router, Turbopack)
+- **Styling**: Tailwind CSS v4 (CSS Variables Theme)
 - **Language**: TypeScript
 - **UI Primitives**: Radix UI (Tooltip), Lucide React (Icons)
+
+## 🌟 Features
+
+- **Daily Briefing**: A "nightclub-to-library" morning console that filters noise and surfaces only what matters.
+- **Work Objects**: Structured decision cards extracted from messy Slack threads.
+- **Draft Queue**: AI-drafted responses that learn your tone and policy preferences via inline feedback.
+- **Safety Ledger**: A transparent log of every action the AI takes, building trust through visibility.
+- **Focus Shield**: Automated protection during deep work sessions (Slack Bot).
+- **Navigation**: Quick access to Drafts and Ledger via the Top Bar.
 
 ## 🚀 Getting Started
 
@@ -72,11 +81,16 @@ To run the "Focus Shield" auto-reply bot during the recording:
 
 ```bash
 # Install slack_bolt
-pip install slack_bolt
+pip install slack_bolt python-dotenv
 
 # Run the bot
 python focus_bot.py
 ```
+
+**Testing Focus Shield:**
+1. Run the script.
+2. Send a DM to the bot user on Slack: "Hey quick question".
+3. Verify the auto-reply: "David is heads-down until 2pm..."
 
 
 ## 🎬 Demo Script

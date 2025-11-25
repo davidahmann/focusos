@@ -13,7 +13,7 @@ export function WorkObjectCard({
     return (
         <Link
             href={`/work-objects/${wo.id}`}
-            className="group block rounded-lg border border-border bg-card px-4 py-3 shadow-soft hover:border-accent/40 hover:shadow-soft-lg"
+            className="group block rounded-lg border border-border bg-card px-4 py-3 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-soft-lg"
         >
             <div className="flex items-center gap-3">
                 <PriorityDot priority={wo.priority} />

@@ -19,6 +19,9 @@ export const mockBriefing = {
             policy_matches: [
                 { policy_id: "r1", rule: "Escalate Sev-1 incidents", confidence: 0.98 },
             ],
+            action_items: [
+                { description: "Revert PR #4920 (Search Indexer)", owner: "@eng1", due_date: "Today" }
+            ],
         },
         {
             id: "wo-2",

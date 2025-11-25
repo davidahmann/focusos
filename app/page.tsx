@@ -48,12 +48,11 @@ export default function HomePage() {
 
       <section className="space-y-3">
         <div className="flex items-center justify-between">
-          <SectionHeader title={`Noise filtered (${noiseCount})`} />
           <Tooltip
             trigger={
-              <button className="text-xs text-muted underline decoration-dotted underline-offset-4 hover:text-fg">
-                Why?
-              </button>
+              <div className="cursor-help decoration-dotted underline-offset-4 hover:underline">
+                <SectionHeader title={`Noise filtered (${noiseCount})`} />
+              </div>
             }
           >
             <div className="space-y-1">
