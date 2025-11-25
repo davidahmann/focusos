@@ -37,6 +37,28 @@ export const mockBriefing = {
                 { policy_id: "r2", rule: "Investor threads always P1+", confidence: 0.94 },
             ],
         },
+
+        // Dummy decisions to match count (4)
+        {
+            id: "d-3",
+            type: "decision",
+            title: "Approve Q4 Marketing Budget",
+            summary: "CMO requesting $50k increase for paid ads.",
+            participants: ["@cmo", "@finance"],
+            confidence: 0.85,
+            priority: "p2",
+            timestamp: "Yesterday",
+        },
+        {
+            id: "d-4",
+            type: "decision",
+            title: "Select offsite venue",
+            summary: "Team voting closed. Napa vs Tahoe.",
+            participants: ["@ops"],
+            confidence: 0.92,
+            priority: "p2",
+            timestamp: "Yesterday",
+        },
     ] as WorkObject[],
     tasks: [
         {
@@ -50,6 +72,11 @@ export const mockBriefing = {
             timestamp: "Yesterday 22:06",
             action_items: [{ description: "Attach SOC2 pack", owner: "@pm", due_date: "Today" }],
         },
+        // Dummy tasks to match count (5)
+        { id: "t-2", type: "task", title: "Review Q3 hiring plan", summary: "Finance needs headcount approval.", participants: ["@finance"], confidence: 0.88, priority: "p2", timestamp: "Yesterday" },
+        { id: "t-3", type: "task", title: "Approve new laptop request", summary: "Eng hire starting Monday.", participants: ["@ops"], confidence: 0.95, priority: "p3", timestamp: "Yesterday" },
+        { id: "t-4", type: "task", title: "Update linear roadmap", summary: "Sync with product board.", participants: ["@pm"], confidence: 0.85, priority: "p3", timestamp: "Yesterday" },
+        { id: "t-5", type: "task", title: "Sign vendor contract", summary: "Docusign pending.", participants: ["@legal"], confidence: 0.92, priority: "p2", timestamp: "Yesterday" },
     ] as WorkObject[],
     fyis: [
         {
@@ -62,6 +89,15 @@ export const mockBriefing = {
             priority: "p3",
             timestamp: "Today 01:14",
         },
+        // Dummy FYIs to match count (9)
+        { id: "f-2", type: "fyi", title: "Competitor launched feature X", summary: "TechCrunch article.", participants: ["@product"], confidence: 0.8, priority: "p3", timestamp: "Today" },
+        { id: "f-3", type: "fyi", title: "New office protocols", summary: "Effective Monday.", participants: ["@ops"], confidence: 0.9, priority: "p3", timestamp: "Today" },
+        { id: "f-4", type: "fyi", title: "Weekly metrics report", summary: "Growth up 5%.", participants: ["@data"], confidence: 0.95, priority: "p3", timestamp: "Today" },
+        { id: "f-5", type: "fyi", title: "Customer love tweet", summary: "Shared in #general.", participants: ["@marketing"], confidence: 0.8, priority: "p3", timestamp: "Today" },
+        { id: "f-6", type: "fyi", title: "Server maintenance window", summary: "Saturday 2am.", participants: ["@eng"], confidence: 0.99, priority: "p3", timestamp: "Today" },
+        { id: "f-7", type: "fyi", title: "Design sync moved", summary: "Now at 3pm.", participants: ["@design"], confidence: 0.9, priority: "p3", timestamp: "Today" },
+        { id: "f-8", type: "fyi", title: "Lunch order placed", summary: "Pizza today.", participants: ["@ops"], confidence: 0.95, priority: "p3", timestamp: "Today" },
+        { id: "f-9", type: "fyi", title: "New badge printed", summary: "Pick up at desk.", participants: ["@ops"], confidence: 0.98, priority: "p3", timestamp: "Today" },
     ] as WorkObject[],
     noiseCount: 127,
     noiseTopSources: ["#random", "#marketing"],
