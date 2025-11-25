@@ -118,6 +118,34 @@ export const mockDrafts: Draft[] = [
         contextSnippet: "Need narrative for churn line in ARR bridge.",
         text: "We’ll frame Q3 churn as a one-off enterprise contraction tied to product transition, not a systemic retention issue.",
     },
+    {
+        id: "d2",
+        channel: "#hiring",
+        sender: "@recruiter",
+        contextSnippet: "Should we interview this Sr. PM candidate?",
+        text: "Pass for now. We are frozen on non-eng headcount until Q2. Keep them warm though.",
+    },
+    {
+        id: "d3",
+        channel: "#sales-deals",
+        sender: "@sales_lead",
+        contextSnippet: "Enterprise prospect asking for 15% discount on 2yr deal.",
+        text: "Approved. 15% is fine for 2-year upfront. Make sure to lock in the logo rights.",
+    },
+    {
+        id: "d4",
+        channel: "#partnerships",
+        sender: "@ext_partner",
+        contextSnippet: "Coffee chat to explore synergies?",
+        text: "Thanks for reaching out. I'm heads-down on product right now, but looping in @biz_dev to see if there's a fit.",
+    },
+    {
+        id: "d5",
+        channel: "#eng-updates",
+        sender: "@eng_manager",
+        contextSnippet: "Weekly sprint report attached. No blockers.",
+        text: "Thanks, looks good. Keep pushing on the search latency fix.",
+    },
 ];
 
 export const mockLedger = {

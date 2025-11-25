@@ -13,7 +13,7 @@ export default function HomePage() {
     <div className="space-y-8">
       <HeroStrip
         headline="12 items need your brain today."
-        sub="Last 24h: 142 messages handled • 5 rules learned"
+        sub="Saved you: 58 minutes of attention today."
       />
 
       <section className="space-y-3">

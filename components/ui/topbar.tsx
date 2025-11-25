@@ -16,7 +16,10 @@ export function TopBar() {
                     </div>
                     <div>
                         <div className="text-sm font-semibold tracking-tight">Focus OS</div>
-                        <div className="text-xs text-muted">{today}</div>
+                        <div className="flex items-center gap-1.5">
+                            <div className="h-1.5 w-1.5 rounded-full bg-good" />
+                            <div className="text-xs text-muted">Connected to Slack</div>
+                        </div>
                     </div>
                 </div>
 

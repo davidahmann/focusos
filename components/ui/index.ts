@@ -17,3 +17,4 @@ export * from "./inline-rule-prompt";
 export * from "./ledger-digest";
 export * from "./ledger-row";
 export * from "./pill";
+export * from "./sidebar";

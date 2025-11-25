@@ -1,172 +1,126 @@
-# ⭐ YC DEMO SCRIPT (FINAL VERSION)
+# ⭐ YC DEMO SCRIPT (ATTENTION FIREWALL)
 
-**Title:** “From 200 Messages → 12 Decisions”
-**Runtime:** ~2 minutes 20 seconds
-
----
-
-## 🎬 0:00 — Cold Open (Slack Chaos)
-
-**[Screen Recording: Slack open with 150+ unread messages across 20 channels. High-stakes content.]**
-
-**Founder VO (calm, tired, honest):**
-> “Every morning, I used to open Slack to 150… sometimes 250 unread messages across two dozen channels.
-> Sam Altman described this perfectly:
-> ‘I dread the first hour of my day — it’s just an explosion of Slack.’
-> I felt the same… until we built this.”
-
-**[Hard cut.]**
+**Title:** “Collapse Slack Chaos”
+**Runtime:** ~2 minutes
 
 ---
 
-## 🎬 0:12 — Reveal Focus OS (The Magic Cut)
+## 🎬 0:00 — The Problem (Context Fragmentation)
 
-**[Show the Focus OS web app, clean like Linear/Superhuman.]**
+**[Visual: Rapid-fire montage (0.5s each). No narration.]**
+*   **Slack** (Use the `/slack` view for a perfect, busy state)
+*   Gmail
+*   Notion
+*   Linear
+*   Asana
+*   Calendar
+*   Back to Slack
 
 **Founder VO:**
-> “Now I don’t start my day in Slack at all.
->
-> I start it here — in Focus OS.
-> Instead of 200 messages…
-> I see 12 decisions.”
-
-**[Scroll slowly:]**
-*   Decisions (4)
-*   Tasks (5)
-*   FYIs (9)
-*   Noise filtered (127)
-
-**[Hover on “Noise filtered: 127.” Tooltip pops immediately.]**
-
-**Founder VO (slightly relieved):**
-> “One hundred twenty-seven messages are auto-filtered as noise — safely.”
-
-**[Let that number land.]**
+> “The entire OS of modern work is interrupt-driven.
+> We don’t have a coordination crisis.
+> We have an attention collapse.”
 
 ---
 
-## 🎬 0:28 — The OS Primitive (Work Objects)
+## 🎬 0:15 — The Wedge (Attention Firewall)
 
-**[Click a Decision.]**
+**[Show Focus OS Home. Clean. Quiet.]**
 
-**[Show the Work Object:]**
-*   Summary
-*   Recommended action
-*   Participants
-*   Priority
-*   Confidence score
-*   Policy matches
-*   Action items (if any)
+**[Highlight Hero Metric: "Saved you: 58 minutes of attention today."]**
 
 **Founder VO:**
-> “Focus OS converts Slack threads into structured Work Objects.
->
-> Instead of reading long conversations, I just see the decision:
-> the context, the tradeoffs, and the recommended action.”
+> “This is Focus OS.
+> It is not a coordination platform.
+> It is an attention firewall.”
 
-**[Pause 1 second. Let the simplicity sink in.]**
+**[On-screen text: "Instant value. No team migration. No behavior change."]**
+
+**Founder VO:**
+> “It sits above Slack via OAuth.
+> No team migration. No behavior change.
+> It just… quiets the noise.”
 
 ---
 
-## 🎬 0:45 — Drafting + Policy Learning (The “It Learns Me” Moment)
+## 🎬 0:30 — The Solution (Compression)
 
-**[Open a draft response.]**
+**[Click the first Decision ("Rollback search rollout").]**
 
-**Draft text example:**
-> “Let’s move forward with Option B — it resolves the blocker and keeps Friday’s deadline.”
+**[Show "Raw Thread" view first (messy text).]**
 
 **Founder VO:**
-> “It drafts my responses in my tone.
+> “Normally, I’d read 47 messages to understand this outage.”
+
+**[Click "Compress Context" button.]**
+**[Animation: Text collapses into the structured Work Object.]**
+
+**Founder VO:**
+> “Focus OS collapses the chaos into a single Work Object.
+> Inference. Structuring. Compression.
+> Now I just see the decision.”
+
+---
+
+## 🎬 0:50 — Founder Focus (The "Hub" Person)
+
+**[Show the structured fields: Priority P0, Confidence 91%, Action Items.]**
+
+**Founder VO:**
+> “Most tools try to help teams coordinate.
+> Focus OS helps the person everyone depends on.
+> The founder. The CTO. The Staff Engineer.”
+
+---
+
+## 🎬 1:05 — The Moat (It Learns You)
+
+**[Open Drafts. Show the list of 5 drafts (Fundraising, Hiring, Sales, etc.).]**
+**[Click the first one ("Fundraising").]**
+
+**Founder VO:**
+> “It drafts responses in my tone.
 > I can approve… edit… or reject.”
 
-**[Make a small edit to tone.]**
+---
 
-**[Inline prompt appears:]**
-> “Apply this tone to future messages from @Investor?”
-> ✔ Yes ✖ No
+## 🎬 1:25 — The Trust (Safety Ledger)
 
-**[Click Yes immediately.]**
+**[Open Ledger. Show "Daily Digest".]**
 
 **Founder VO:**
-> “Every correction becomes a rule — instantly.
-> I don’t configure anything.
-> Focus OS learns how I think.”
+> “Altman says Slack creates fake work.
+> Focus OS removes it.”
 
-*(Note: This is your personalization moat. YC reviewers LOVE this moment.)*
+**[Show log: "Ignored #marketing", "Escalated Sev-1".]**
+
+**Founder VO:**
+> “Every action is logged here.
+> 142 interruptions blocked today.
+> Zero critical misses.”
 
 ---
 
-## 🎬 1:03 — The Trust Ledger (The Objection Killer)
+## 🎬 1:45 — The Comparison
 
-**[Open the Safety Ledger.]**
+**[Visual: Stark white screen with text comparison.]**
 
-**[Show:]**
-*   Draft generated
-*   Noise filtered
-*   Rule applied
-*   Decision escalated
-*   Auto-responses
-*   Confidence scores
-*   Rationale snippets
+**Text on screen:**
+*   **Traditional Tools:** Organize messages → Add workflows → Encourage collaboration
+*   **Focus OS:** Removes messages → Structures work → Collapses decisions
 
 **Founder VO:**
-> “The part that makes this trustworthy is the Safety Ledger.
-> Every action the assistant takes is logged — with a clear explanation.
->
-> No black box.
-> No hallucinations.
-> Nothing hidden.”
-
-**[Click “Daily Digest”:]**
-> “142 messages handled today.
-> 5 decisions waiting.
-> 0 critical misses.”
-
-**Founder VO:**
-> “This is why I rely on it.”
+> “Other tools want you to organize the mess.
+> We want to delete it.”
 
 ---
 
-## 🎬 1:25 — Focus Shield (Deep Work Restored)
+## 🎬 2:00 — The Closer
 
-**[Trigger a Slack message from another device:]**
-> “Hey quick question — can you review this?”
-
-**[Show Focus OS auto-responding:]**
-> “David is heads-down until 2pm.
-> I can clarify or route this in the meantime.”
+**[Return to Home Page. Calm.]**
 
 **Founder VO:**
-> “During deep work, Focus OS shields me.
-> It responds politely, at human timing, without pretending to be me.”
-
-*(Note: This shows ethics, intelligence, and social correctness.)*
-
----
-
-## 🎬 1:42 — Return to Calm (The Relief Moment)
-
-**[Go back to the Daily Briefing.]**
-
-**[Let the screen breathe — clean UI, lots of whitespace.]**
-
-**Founder VO:**
-> “Slack used to break my mornings.
-> Now I don’t open it at all.
->
-> Focus OS gives me a clean, structured, prioritized view of my day,
-> learns my judgment automatically,
-> protects my attention,
-> and guarantees I never miss anything important.”
-
-**[Pause.]**
-
----
-
-## 🎬 2:00 — Closer (The Inevitability Line)
-
-**Founder VO (quiet, confident):**
-> “This is what communication feels like
+> “This is what communication feels like…
 > when the cognitive load disappears.”
 
 **[Fade out.]**

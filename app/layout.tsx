@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 
-import { AppShell } from "@/components/ui";
+
 
 export const metadata: Metadata = {
   title: "Focus OS",
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <AppShell>{children}</AppShell>
+        {children}
       </body>
     </html>
   );
