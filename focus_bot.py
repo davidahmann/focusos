@@ -23,7 +23,7 @@ def handle_message(message, say):
     if message["channel_type"] == "im":
         print(f"⚡️ Auto-replying to DM from {message['user']}")
         say(
-            text="David is heads-down until 2pm. I can clarify or route this in the meantime.",
+            text="[User] is heads-down until 2pm. I can clarify or route this in the meantime.",
             thread_ts=message.get("ts")
         )
 
