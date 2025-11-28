@@ -1,4 +1,4 @@
-# ⭐ YC DEMO SCRIPT (ATTENTION FIREWALL)
+# ⭐ DEMO SCRIPT (ATTENTION FIREWALL)
 
 **Title:** “Collapse Slack Chaos”
 **Runtime:** ~2 minutes

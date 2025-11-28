@@ -2,7 +2,7 @@
 
 **Your AI Chief of Staff for Slack.**
 
-This repository contains the high-fidelity YC demo build for Focus OS. It demonstrates how the system transforms chaotic Slack communication into structured, prioritized "Work Objects," enabling founders to make decisions 10x faster.
+This repository contains the high-fidelity demo build for Focus OS. It demonstrates how the system transforms chaotic Slack communication into structured, prioritized "Work Objects," enabling founders to make decisions 10x faster.
 
 ## 🌟 Features
 
