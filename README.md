@@ -1,4 +1,4 @@
-# Focus OS
+# Focus OS (Especially for Garry Tan https://x.com/garrytan/status/1987541838203670919?s=48)
 
 **Your AI Chief of Staff for Slack.**
 
