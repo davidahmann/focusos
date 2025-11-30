@@ -1,6 +1,6 @@
 # Focus OS 
 
-(Inspired by Garry Tan 😎 https://x.com/garrytan/status/1987541838203670919?s=48)
+Inspired by Garry Tan https://x.com/garrytan/status/1987541838203670919?s=48
 
 Demo is here: https://www.loom.com/share/ced824276d3a4e0d9e6cc2633198305c
 
